@@ -61,13 +61,13 @@ In order to not use options files, modify seltzer.sh and remove the --config-fil
 
 Seltzer uses multiple files and folders including the following:
 
-/bin		Contains the seltzer.sh BASH script.
-/conf		Contains configuration files seltzer needs including Burp Suite user and project options files.
-/doc		Contains documentation including this README.
-/log		Seltzer logs all scanning activities and will save log files to this directory.
-/scans		Seltzer outputs all scan reports and project files to this directory.
-/source		Contains the seltzer.jar and related Java source code files.
-/targets	Contains targets files.
+<br/>/bin		Contains the seltzer.sh BASH script.
+<br/>/conf		Contains configuration files seltzer needs including Burp Suite user and project options files.
+<br/>/doc		Contains documentation including this README.
+<br/>/log		Seltzer logs all scanning activities and will save log files to this directory.
+<br/>/scans		Seltzer outputs all scan reports and project files to this directory.
+<br/>/source		Contains the seltzer.jar and related Java source code files.
+<br/>/targets	Contains targets files.
 
 ## Targets File
 
