@@ -5,14 +5,14 @@
 - [seltzer.jar](#seltzer.jar)
 - [seltzer.sh](#seltzer.sh)
 - [BURPHOME](#BURPHOME)
-- [Burp REST API](#BurpRESTAPI)
-- [Configuration Files](#Configuration Files)
-- [Files and Folders](#Files and Folders)
-- [Targets File](#Targets File)
+- [Burp REST API](#Burp-REST-API)
+- [Configuration Files](#Configuration-Files)
+- [Files and Folders](#Files-and-Folders)
+- [Targets File](#Targets-File)
 - [Examples](#Examples)
 - [Installation](#Installation)
 - [Download](#Download)
-- [Build](#Build seltzer.jar)
+- [Build](#Build-seltzer.jar)
 
 ## Description
 
