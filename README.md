@@ -17,18 +17,18 @@
 ## Description
 
 Seltzer parses a list of targets and sends them to the Burp Suite REST API for scanning.
-It opens an instance of Burp Suite in headless mode, passing user and project options found in the seltzer /conf directory.
-The targets file is a CSV file containing a list of targets to scan and scan configuration parameters.
-Targets are scanned serially, one scan starting after the previous scan has completed.
-A project file, HTML report and XML export for each target is saved into the seltzer /scans directory.
-A log file is created in the seltzer /log directory.  New log files are created daily.
-The two primary components of seltzer are the seltzer.jar Burp extension and the seltzer.sh Bash shell script.
+<br/>It opens an instance of Burp Suite in headless mode, passing user and project options found in the seltzer /conf directory.
+<br/>The targets file is a CSV file containing a list of targets to scan and scan configuration parameters.
+<br/>Targets are scanned serially, one scan starting after the previous scan has completed.
+<br/>A project file, HTML report and XML export for each target is saved into the seltzer /scans directory.
+<br/>A log file is created in the seltzer /log directory.  New log files are created daily.
+<br/>The two primary components of seltzer are the seltzer.jar Burp extension and the seltzer.sh Bash shell script.
 
 ## seltzer.jar
 
 Seltzer.jar is the Burp extension that handles creating the scan, monitoring its progress and exporting the results.
-Burp Suite must be configured to use the seltzer.jar file included with this project.
-The extension should be configured to direct all output to the console.
+<br/>Burp Suite must be configured to use the seltzer.jar file included with this project.
+<br/>The extension should be configured to direct all output to the console.
 
 ## seltzer.sh
 Seltzer.sh is a Bash shell script that handles reading the targets file, starting Burp and creating the log file.
@@ -43,19 +43,19 @@ setlzer.sh accepts the following options:
 ## BURPHOME
 
 Seltzer requires a local environment variable named BURPHOME to locate your Burp Suite JAR file.
-If this environment variable is not set seltzer will instruct the user to set it and exit.
-Example: export BURPHOME=/home/myuser/BurpSuite.
+<br/>If this environment variable is not set seltzer will instruct the user to set it and exit.
+<br/>Example: export BURPHOME=/home/myuser/BurpSuite.
 
 ## Burp REST API
 
 The Burp REST API must be configured and running.
-Seltzer supports the use of API keys and running the REST API on non-default interfaces and ports.
+<br/>Seltzer supports the use of API keys and running the REST API on non-default interfaces and ports.
 
 ## Configuration Files
 
 By default, seltzer uses the useroptions.json and projectoptions.json files located in the seltzer /conf directory.
-These files can be modified or replaced.
-In order to not use options files, modify seltzer.sh and remove the --config-file and --user-config-file parameters passed to Burp.
+<br/>These files can be modified or replaced.
+<br/>In order to not use options files, modify seltzer.sh and remove the --config-file and --user-config-file parameters passed to Burp.
 
 ## Files and Folders
 
