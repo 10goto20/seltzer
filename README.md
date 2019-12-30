@@ -8,7 +8,7 @@ A Burp Suite extension for mass site scanning.
 - [BURPHOME](#BURPHOME)
 - [Burp REST API](#Burp-REST-API)
 - [Configuration Files](#Configuration-Files)
-- [Files and Folders](#Files-and-Folders)
+- [Folder Structure](#Folder-Structure)
 - [Targets File](#Targets-File)
 - [Examples](#Examples)
 - [Installation](#Installation)
@@ -58,7 +58,7 @@ By default, seltzer uses the useroptions.json and projectoptions.json files loca
 <br/>These files can be modified or replaced.
 <br/>In order to not use options files, modify seltzer.sh and remove the --config-file and --user-config-file parameters passed to Burp.
 
-## Files and Folders
+## Folder Structure
 
 Seltzer uses multiple files and folders including the following:
 
