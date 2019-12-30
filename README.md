@@ -73,6 +73,8 @@ Seltzer uses multiple files and folders including the following:
 
 The targets file is a list of scanning targets in CSV format.
 <br/>Parameters in the targets file must be in the correct order.
+<br/>The REPORTNAME parameter must be unique for each target or the exported files will get overwritten.
+<br/>
 <br/>The targets file supports the following parameters in the order listed:
 
 TARGET,REPORTNAME,USERNAME,PASSWORD,CONFIGURATION,RESOURCE
