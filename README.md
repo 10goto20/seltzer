@@ -61,13 +61,13 @@ In order to not use options files, modify seltzer.sh and remove the --config-fil
 
 Seltzer uses multiple files and folders including the following:
 
-<br/>/bin		Contains the seltzer.sh BASH script.
-<br/>/conf		Contains configuration files seltzer needs including Burp Suite user and project options files.
-<br/>/doc		Contains documentation including this README.
-<br/>/log		Seltzer logs all scanning activities and will save log files to this directory.
-<br/>/scans		Seltzer outputs all scan reports and project files to this directory.
-<br/>/source		Contains the seltzer.jar and related Java source code files.
-<br/>/targets	Contains targets files.
+<br/>/bin - Contains the seltzer.sh BASH script.
+<br/>/conf - Contains configuration files seltzer needs including Burp Suite user and project options files.
+<br/>/doc - Contains documentation including this README.
+<br/>/log - Seltzer logs all scanning activities and will save log files to this directory.
+<br/>/scans - Seltzer outputs all scan reports and project files to this directory.
+<br/>/source - Contains the seltzer.jar and related Java source code files.
+<br/>/targets - Contains targets files.
 
 ## Targets File
 
@@ -77,12 +77,12 @@ The targets file supports the following parameters in the order listed:
 
 TARGET,REPORTNAME,USERNAME,PASSWORD,CONFIGURATION,RESOURCE
 
-TARGET		The individual target to scan - REQUIRED.
-REPORTNAME	The name used to create the report files - MUST BE UNIQUE PER TARGET - REQUIRED.
-USERNAME	The username for credentialed scans - OPTIONAL.
-PASSWORD	The password for credentialed scans - OPTIONAL.
-CONFIGURATION	The named configuration to use for the scan.  Only named configurations are supported at this time - OPTIONAL.
-RESOURCE	The resource pool to use for the scan.  Only named configurations are supported at this time - OPTIONAL.
+<br/>TARGET		The individual target to scan - REQUIRED.
+<br/>REPORTNAME	The name used to create the report files - MUST BE UNIQUE PER TARGET - REQUIRED.
+<br/>USERNAME	The username for credentialed scans - OPTIONAL.
+<br/>PASSWORD	The password for credentialed scans - OPTIONAL.
+<br/>CONFIGURATION	The named configuration to use for the scan.  Only named configurations are supported at this time - OPTIONAL.
+<br/>RESOURCE	The resource pool to use for the scan.  Only named configurations are supported at this time - OPTIONAL.
 
 Example targets file:
 
