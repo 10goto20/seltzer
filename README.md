@@ -88,9 +88,9 @@ TARGET		The individual target to scan - REQUIRED.
 
 Example targets file:
 
-http://192.168.0.100,BurpReport0
-<br/>http://192.168.0.101,BurpReport1,someuser,somepass
-<br/>http://192.168.0.102,BurpReport2,someuser,somepass,Audit checks - light active,Default resource pool
+http://<span>192.168.1.100</span>,BurpReport0
+<br/>http://<span>192.168.1.101</span>,BurpReport1,someuser,somepass
+<br/>http://<span>192.168.1.102</span>,BurpReport2,someuser,somepass,Audit checks - light active,Default resource pool
 
 ## Examples
 
@@ -98,10 +98,10 @@ Run seltzer with only a targets file:
 <br/>./seltzer.sh -t ../targets/targets.txt
 
 Run seltzer using the REST API on a non-default port and with a targets file:
-<br/>./seltzer.sh -s http://127.0.0.1:4444 -t ../targets/targets.txt
+<br/>./seltzer.sh -s http://<span>127.0.0.1:4444</span> -t ../targets/targets.txt
 
 Run seltzer using the REST API on a non-default port, with an API key and with a targets file:
-<br/>./seltzer.sh -s http://127.0.0.1:4444 -a PjmM7JKWPtLa4YKnI2UoR5BTaCosXdgrS -t ../targets/targets.txt
+<br/>./seltzer.sh -s http://<span>127.0.0.1:4444</span> -a PjmM7JKWPtLa4YKnI2UoR5BTaCosXdgrS -t ../targets/targets.txt
 
 ## Installation 
 
