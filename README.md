@@ -36,7 +36,7 @@ Seltzer.sh is a Bash shell script that handles reading the targets file, startin
 setlzer.sh accepts the following options:
 
 -t, --targets	The targets file - REQUIRED.
-<br/>-s, --server	REST API host and port.  Defaults to http://127.0.0.1:1337 - OPTIONAL.
+<br/>-s, --server	REST API host and port.  Defaults to http://<span>127.0.0.1:1337</span> - OPTIONAL.
 <br/>-a, --apikey	REST API key - OPTIONAL.
 <br/>-h, --help	Displays help and exits.
 
