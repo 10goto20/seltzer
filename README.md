@@ -1,4 +1,5 @@
-# Seltzer: A Burp Extension for Mass Site Scanning
+# Seltzer
+A Burp Extension for Mass Site Scanning
 
 # Content
 - [Description](#Description)
