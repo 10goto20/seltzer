@@ -108,7 +108,6 @@ Run seltzer using the REST API on a non-default port, with an API key and with a
 
 1: Download and extract the pre-compiled binaries or build them from source.  The latest release of seltzer can be at https://github.com/10goto20/seltzer/releases.
 2: Configure Burp to use the seltzer extension.  Configure the extension to direct all output to the console.
-3: Download and install the 
 
 ## Download
 
