@@ -5,7 +5,7 @@
 - [seltzer.jar](#seltzer.jar)
 - [seltzer.sh](#seltzer.sh)
 - [BURPHOME](#BURPHOME)
-- [Burp REST API](#Burp REST API)
+- [Burp REST API](#BurpRESTAPI)
 - [Configuration Files](#Configuration Files)
 - [Files and Folders](#Files and Folders)
 - [Targets File](#Targets File)
