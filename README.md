@@ -34,11 +34,10 @@ The extension should be configured to direct all output to the console.
 Seltzer.sh is a Bash shell script that handles reading the targets file, starting Burp and creating the log file.
 
 setlzer.sh accepts the following options:
-
--t, --targets	The targets file - REQUIRED.
--s, --server	REST API host and port.  Defaults to http://127.0.0.1:1337 - OPTIONAL.
--a, --apikey	REST API key - OPTIONAL.
--h, --help	Displays help and exits.
+<br/>-t, --targets	The targets file - REQUIRED.
+<br/>-s, --server	REST API host and port.  Defaults to http://127.0.0.1:1337 - OPTIONAL.
+<br/>-a, --apikey	REST API key - OPTIONAL.
+<br/>-h, --help	Displays help and exits.
 
 ## BURPHOME
 
@@ -60,7 +59,6 @@ In order to not use options files, modify seltzer.sh and remove the --config-fil
 ## Files and Folders
 
 Seltzer uses multiple files and folders including the following:
-
 <br/>/bin - Contains the seltzer.sh BASH script.
 <br/>/conf - Contains configuration files seltzer needs including Burp Suite user and project options files.
 <br/>/doc - Contains documentation including this README.
@@ -76,7 +74,6 @@ Parameters in the targets file must be in the correct order.
 The targets file supports the following parameters in the order listed:
 
 TARGET,REPORTNAME,USERNAME,PASSWORD,CONFIGURATION,RESOURCE
-
 <br/>TARGET		The individual target to scan - REQUIRED.
 <br/>REPORTNAME	The name used to create the report files - MUST BE UNIQUE PER TARGET - REQUIRED.
 <br/>USERNAME	The username for credentialed scans - OPTIONAL.
@@ -85,21 +82,20 @@ TARGET,REPORTNAME,USERNAME,PASSWORD,CONFIGURATION,RESOURCE
 <br/>RESOURCE	The resource pool to use for the scan.  Only named configurations are supported at this time - OPTIONAL.
 
 Example targets file:
-
-http://192.168.0.100,BurpReport0
-http://192.168.0.101,BurpReport1,someuser,somepass
-http://192.168.0.102,BurpReport2,someuser,somepass,Audit checks - light active,Default resource pool
+<br/>http://192.168.0.100,BurpReport0
+<br/>http://192.168.0.101,BurpReport1,someuser,somepass
+<br/>http://192.168.0.102,BurpReport2,someuser,somepass,Audit checks - light active,Default resource pool
 
 ## Examples
 
 Run seltzer with only a targets file:
-./seltzer.sh -t ../targets/targets.txt
+<br/>./seltzer.sh -t ../targets/targets.txt
 
 Run seltzer using the REST API on a non-default port and with a targets file:
-./seltzer.sh -s http://127.0.0.1:4444 -t ../targets/targets.txt
+<br/>./seltzer.sh -s http://127.0.0.1:4444 -t ../targets/targets.txt
 
 Run seltzer using the REST API on a non-default port, with an API key and with a targets file:
-./seltzer.sh -s http://127.0.0.1:4444 -a PjmM7JKWPtLa4YKnI2UoR5BTaCosXdgrS -t ../targets/targets.txt
+<br/>./seltzer.sh -s http://127.0.0.1:4444 -a PjmM7JKWPtLa4YKnI2UoR5BTaCosXdgrS -t ../targets/targets.txt
 
 ## Installation 
 
