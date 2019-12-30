@@ -72,8 +72,8 @@ Seltzer uses multiple files and folders including the following:
 ## Targets File
 
 The targets file is a list of scanning targets in CSV format.
-Parameters in the targets file must be in the correct order.
-The targets file supports the following parameters in the order listed:
+<br/>Parameters in the targets file must be in the correct order.
+<br/>The targets file supports the following parameters in the order listed:
 
 TARGET,REPORTNAME,USERNAME,PASSWORD,CONFIGURATION,RESOURCE
 
@@ -105,9 +105,9 @@ Run seltzer using the REST API on a non-default port, with an API key and with a
 
 1: Download and extract the pre-compiled binaries or build them from source.  The latest release of seltzer can be at https://github.com/10goto20/seltzer/releases.
 
-1: Configure Burp to use the seltzer extension.  Configure the extension to direct all output to the console.
+2: Configure Burp to use the seltzer extension.  Configure the extension to direct all output to the console.
 
-1: Download and install the 
+3: Download and install the 
 
 ## Download
 
