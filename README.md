@@ -92,7 +92,6 @@ TARGET		The individual target to scan - REQUIRED.
 <br/>RESOURCE	The resource pool to use for the scan. Only named configurations are supported at this time - OPTIONAL.
 
 Example targets file:
-
 <br/>http://<span>192.168.1.102</span>,Project1,BurpReport2,,,Audit checks - light active,Default resource pool
 <br/>http://<span>192.168.1.102</span>,Project2,BurpReport3,someuser,somepass,Audit checks - light active,Default resource pool
 <br/>http://<span>192.168.1.103:9090</span>,Project2,BurpReport4,someuser,somepass,Audit checks - light active,Default resource pool
