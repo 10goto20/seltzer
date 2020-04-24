@@ -22,7 +22,7 @@ Seltzer parses a list of targets and sends them to the Burp Suite REST API for s
 <br/>The targets file is a CSV file containing a list of targets to scan and scan configuration parameters.
 <br/>Targets are scanned serially, one scan starting after the previous scan has completed.
 <br/>A project file, HTML report and XML export for each target is saved into the Seltzer /scans directory.
-<br/>A log file is created in the Seltzer /log directory.  New log files are created daily.
+<br/>A log file is created in the Seltzer /log directory. New log files are created daily.
 <br/>The two primary components of Seltzer are the seltzer.jar Burp extension and the seltzer.sh Bash shell script.
 
 ## seltzer.jar
@@ -37,7 +37,7 @@ seltzer.sh is a Bash shell script that handles reading the targets file, startin
 setlzer.sh accepts the following options:
 
 -t, --targets	The targets file - REQUIRED.
-<br/>-s, --server	REST API host and port.  Defaults to http://<span>127.0.0.1:1337</span> - OPTIONAL.
+<br/>-s, --server	REST API host and port. Defaults to http://<span>127.0.0.1:1337</span> - OPTIONAL.
 <br/>-a, --apikey	REST API key - OPTIONAL.
 <br/>-h, --help	Displays help and exits.
 
@@ -76,8 +76,8 @@ The targets file is a list of scanning targets in CSV format.
 <br/>Parameters in the targets file must be in the correct order.
 <br/>The PROJECT parameter may unique or may be reused to have multiple targets in a single project file.
 <br/>The REPORTNAME parameter must be unique for each target or the exported files will get overwritten.
-<br/>The RESOURCE parameter is experiemental and should only be used if you have created a named resource pool in an existing Burp project file that exists inside the Seltzer /scans directory.  The default "Default resource pool" can be used or the entry can be left blank.
-<br/>An empty field (i.e. ',,') should be used for parameters that wil not be passed.
+<br/>The RESOURCE parameter is experimental and should only be used if you have created a named resource pool in an existing Burp project file that exists inside the Seltzer /scans directory.  The default "Default resource pool" can be used or the entry can be left blank.
+<br/>An empty field (i.e. ',,') should be used for parameters that will not be passed.
 <br/>
 <br/>The targets file supports the following parameters in the order listed:
 
@@ -88,14 +88,14 @@ TARGET		The individual target to scan - REQUIRED.
 <br/>REPORTNAME	The name used to create the report files - MUST BE UNIQUE PER TARGET - REQUIRED.
 <br/>USERNAME	The username for credentialed scans - OPTIONAL.
 <br/>PASSWORD	The password for credentialed scans - OPTIONAL.
-<br/>CONFIGURATION	The named configuration to use for the scan.  Only named configurations are supported at this time - OPTIONAL.
-<br/>RESOURCE	The resource pool to use for the scan.  Only named configurations are supported at this time - OPTIONAL.
+<br/>CONFIGURATION	The named configuration to use for the scan. Only named configurations are supported at this time - OPTIONAL.
+<br/>RESOURCE	The resource pool to use for the scan. Only named configurations are supported at this time - OPTIONAL.
 
 Example targets file:
 
-<br/>http://<span>192.168.1.102</span>,BurpReport2,,,Audit checks - light active,Default resource pool
-<br/>http://<span>192.168.1.102</span>,BurpReport3,someuser,somepass,Audit checks - light active,Default resource pool
-<br/>http://<span>192.168.1.103:9090</span>,BurpReport5,someuser,somepass,Audit checks - light active,Default resource pool
+<br/>http://<span>192.168.1.102</span>,Project1,BurpReport2,,,Audit checks - light active,Default resource pool
+<br/>http://<span>192.168.1.102</span>,Project2,BurpReport3,someuser,somepass,Audit checks - light active,Default resource pool
+<br/>http://<span>192.168.1.103:9090</span>,Project2,BurpReport4,someuser,somepass,Audit checks - light active,Default resource pool
 
 ## Examples
 
