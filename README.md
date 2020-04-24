@@ -76,9 +76,7 @@ The targets file is a list of scanning targets in CSV format.
 <br/>Parameters in the targets file must be in the correct order.
 <br/>The PROJECT parameter may unique or may be reused to have multiple targets in a single project file.
 <br/>The REPORTNAME parameter must be unique for each target or the exported files will get overwritten.
-<br/>The RESOURCE parameter is experiemental and should only be used if you have created a named resource pool in an existing Burp
-<br/>project file that exists inside the Seltzer /scans directory.  The default "Default resource pool" can be used or the entry 
-<br/>can be left blank.
+<br/>The RESOURCE parameter is experiemental and should only be used if you have created a named resource pool in an existing Burp project file that exists inside the Seltzer /scans directory.  The default "Default resource pool" can be used or the entry can be left blank.
 <br/>An empty field (i.e. ',,') should be used for parameters that wil not be passed.
 <br/>
 <br/>The targets file supports the following parameters in the order listed:
