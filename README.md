@@ -21,9 +21,9 @@ Seltzer parses a list of targets and sends them to the Burp Suite REST API for s
 <br/>It opens an instance of Burp Suite in headless mode, passing user and project options found in the seltzer /conf directory.
 <br/>The targets file is a CSV file containing a list of targets to scan and scan configuration parameters.
 <br/>Targets are scanned serially, one scan starting after the previous scan has completed.
-<br/>A project file, HTML report and XML export for each target is saved into the seltzer /scans directory.
-<br/>A log file is created in the seltzer /log directory.  New log files are created daily.
-<br/>The two primary components of seltzer are the seltzer.jar Burp extension and the seltzer.sh Bash shell script.
+<br/>A project file, HTML report and XML export for each target is saved into the Seltzer /scans directory.
+<br/>A log file is created in the Seltzer /log directory.  New log files are created daily.
+<br/>The two primary components of Seltzer are the seltzer.jar Burp extension and the seltzer.sh Bash shell script.
 
 ## seltzer.jar
 
@@ -32,7 +32,7 @@ Seltzer.jar is the Burp extension that handles creating the scan, monitoring its
 <br/>The extension should be configured to direct all output to the console.
 
 ## seltzer.sh
-Seltzer.sh is a Bash shell script that handles reading the targets file, starting Burp and creating the log file.
+seltzer.sh is a Bash shell script that handles reading the targets file, starting Burp, creating the log file and exiting Burp.
 
 setlzer.sh accepts the following options:
 
@@ -56,7 +56,7 @@ The Burp REST API must be configured and running.
 
 By default, seltzer uses the useroptions.json and projectoptions.json files located in the seltzer /conf directory.
 <br/>These files can be modified or replaced.
-<br/>In order to not use options files, modify seltzer.sh and remove the --config-file and --user-config-file parameters passed to Burp.
+<br/>In order to not use these options files, modify seltzer.sh and remove the --config-file and --user-config-file parameters passed to Burp.
 
 ## Folder Structure
 
@@ -75,6 +75,7 @@ Seltzer uses multiple files and folders including the following:
 The targets file is a list of scanning targets in CSV format.
 <br/>Parameters in the targets file must be in the correct order.
 <br/>The REPORTNAME parameter must be unique for each target or the exported files will get overwritten.
+<br/>An empty field (i.e. ',,') should be used for parameters that wil not be passed.
 <br/>
 <br/>The targets file supports the following parameters in the order listed:
 
@@ -89,9 +90,9 @@ TARGET		The individual target to scan - REQUIRED.
 
 Example targets file:
 
-http://<span>192.168.1.100</span>,BurpReport0
-<br/>http://<span>192.168.1.101</span>,BurpReport1,someuser,somepass
-<br/>http://<span>192.168.1.102</span>,BurpReport2,someuser,somepass,Audit checks - light active,Default resource pool
+<br/>http://<span>192.168.1.102</span>,BurpReport2,,,Audit checks - light active,Default resource pool
+<br/>http://<span>192.168.1.102</span>,BurpReport3,someuser,somepass,Audit checks - light active,Default resource pool
+<br/>http://<span>192.168.1.103:9090</span>,BurpReport5,someuser,somepass,Audit checks - light active,Default resource pool
 
 ## Examples
 
