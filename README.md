@@ -27,7 +27,7 @@ Seltzer parses a list of targets and sends them to the Burp Suite REST API for s
 
 ## seltzer.jar
 
-Seltzer.jar is the Burp extension that handles creating the scan, monitoring its progress and exporting the results.
+seltzer.jar is the Burp extension that handles creating the scan, monitoring its progress and exporting the results.
 <br/>Burp Suite must be configured to use the seltzer.jar file included with this project.
 <br/>The extension should be configured to direct all output to the console.
 
