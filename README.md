@@ -67,14 +67,18 @@ Seltzer uses multiple files and folders including the following:
 <br/>/doc - Contains documentation including this README.
 <br/>/log - Seltzer logs all scanning activities and will save log files to this directory.
 <br/>/scans - Seltzer outputs all scan reports and project files to this directory.
-<br/>/source - Contains the seltzer.jar and related Java source code files.
+<br/>/source - Contains seltzer.jar, gradle components and related Java source code files.
 <br/>/targets - Contains targets files.
 
 ## Targets File
 
 The targets file is a list of scanning targets in CSV format.
 <br/>Parameters in the targets file must be in the correct order.
+<br/>The PROJECT parameter may unique or may be reused to have multiple targets in a single project file.
 <br/>The REPORTNAME parameter must be unique for each target or the exported files will get overwritten.
+<br/>The RESOURCE parameter is experiemental and should only be used if you have created a named resource pool in an existing Burp
+<br/>project file that exists inside the Seltzer /scans directory.  The default "Default resource pool" can be used or the entry 
+<br/>can be left blank.
 <br/>An empty field (i.e. ',,') should be used for parameters that wil not be passed.
 <br/>
 <br/>The targets file supports the following parameters in the order listed:
@@ -82,6 +86,7 @@ The targets file is a list of scanning targets in CSV format.
 TARGET,REPORTNAME,USERNAME,PASSWORD,CONFIGURATION,RESOURCE
 
 TARGET		The individual target to scan - REQUIRED.
+<br/>PROJECT	The name of the Burp project file use - REQUIRED.
 <br/>REPORTNAME	The name used to create the report files - MUST BE UNIQUE PER TARGET - REQUIRED.
 <br/>USERNAME	The username for credentialed scans - OPTIONAL.
 <br/>PASSWORD	The password for credentialed scans - OPTIONAL.
