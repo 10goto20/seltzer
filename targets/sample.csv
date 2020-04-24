@@ -1,0 +1,3 @@
+http://192.168.1.102,Project1,BurpReport2,,,Audit checks - light active,Default resource pool
+http://192.168.1.102,Project2,BurpReport3,someuser,somepass,Audit checks - light active,Default resource pool
+http://192.168.1.103:9090,Project2,BurpReport4,someuser,somepass,Audit checks - light active,Default resource pool
