@@ -115,7 +115,7 @@ Run seltzer using the REST API on a non-default port, with an API key and with a
 
 ## Download
 
-The most recent release can be found here: https://github.com/10goto20/seltzer/releases
+The most recent release can be found here: https://github.com/10goto20/seltzer
 
 ## Build seltzer.jar
 
