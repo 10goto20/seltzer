@@ -1,5 +1,5 @@
 # Seltzer
-A Burp Suite extension for mass site scanning.
+A Burp Suite extension for headless, unattended scanning.
 
 # Content
 - [Description](#Description)
@@ -18,7 +18,7 @@ A Burp Suite extension for mass site scanning.
 ## Description
 
 Seltzer parses a list of targets and sends them to the Burp Suite REST API for scanning.
-<br/>It opens an instance of Burp Suite in headless mode, passing user and project options found in the seltzer /conf directory.
+<br/>It opens an instance of Burp Suite in headless mode, passing user and project options found in the Seltzer /conf directory.
 <br/>The targets file is a CSV file containing a list of targets to scan and scan configuration parameters.
 <br/>Targets are scanned serially, one scan starting after the previous scan has completed.
 <br/>A project file, HTML report and XML export for each target is saved into the Seltzer /scans directory.
