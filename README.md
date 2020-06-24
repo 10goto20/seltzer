@@ -1,10 +1,6 @@
 # Seltzer
 A Burp Suite extension for headless, unattended scanning.
 
-# Author
-Gabriel Merritt CISSP, GSEC, CEH, CCSK, CPT
-Senior Security Consultant | Coalfire Labs
-
 # Content
 - [Description](#Description)
 - [seltzer.jar](#seltzer.jar)
